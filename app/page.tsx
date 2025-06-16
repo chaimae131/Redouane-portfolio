@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Mail, Phone, Download, Moon, Sun, Sparkles, ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export default function Portfolio() {
   const [darkMode, setDarkMode] = useState(false)
@@ -65,7 +66,7 @@ export default function Portfolio() {
               <h1 className="text-xl font-bold bg-gradient-to-r from-slate-700 to-gray-700 bg-clip-text text-transparent">
                 REDOUANE BISSI
               </h1>
-              <span className="text-xs text-muted-foreground">Portfolio Professionnel</span>
+              <span className="text-xs text-muted-foreground">{"Portfolio Professionnel"}</span>
             </div>
           </div>
 
@@ -125,7 +126,6 @@ export default function Portfolio() {
                     BISSI
                   </span>
                 </h1>
-
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
@@ -157,9 +157,11 @@ export default function Portfolio() {
                 <div className="absolute -inset-4 bg-gradient-to-r from-slate-600 to-gray-600 rounded-full blur-2xl opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
                 <div className="relative w-80 h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/50 shadow-2xl backdrop-blur-sm">
                   <div className="absolute inset-0 bg-gradient-to-br from-slate-400/20 to-gray-400/20" />
-                  <img
-                    src="./profile.png"
+                  <Image
+                    src="/profile.png"
                     alt="Photo de profil de Redouane Bissi"
+                    width={400}
+                    height={400}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                 </div>
@@ -178,16 +180,16 @@ export default function Portfolio() {
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-slate-700 to-gray-700 bg-clip-text text-transparent">
-                À propos de moi
+                {"À propos de moi"}
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-slate-600 to-gray-600 mx-auto rounded-full" />
             </div>
 
             <div className="backdrop-blur-xl bg-white/30 dark:bg-gray-800/30 rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl">
               <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
-                Diplômé en gestion avec une expérience diversifiée dans l'enseignement, la comptabilité et les énergies
-                renouvelables. Ma passion pour l'apprentissage continu et le développement de projets concrets me pousse
-                à explorer de nouveaux horizons et à contribuer positivement aux défis de demain.
+                {
+                  "Diplômé en gestion avec une expérience diversifiée dans l'enseignement, la comptabilité et les énergies renouvelables. Ma passion pour l'apprentissage continu et le développement de projets concrets me pousse à explorer de nouveaux horizons et à contribuer positivement aux défis de demain."
+                }
               </p>
             </div>
           </div>
@@ -204,7 +206,7 @@ export default function Portfolio() {
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-slate-600 to-gray-600 mx-auto rounded-full" />
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Un parcours riche et diversifié dans l'éducation et les services professionnels
+                {"Un parcours riche et diversifié dans l'éducation et les services professionnels"}
               </p>
             </div>
 
