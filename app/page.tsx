@@ -129,7 +129,7 @@ export default function Portfolio() {
               </div>
 
               <p className="text-lg text-muted-foreground leading-relaxed max-w-xl">
-                Profil polyvalent alliant expertise économique, passion pour l'enseignement et engagement dans les
+                Profil polyvalent alliant expertise économique, passion pour enseignement et engagement dans les
                 solutions énergétiques durables.
               </p>
 
@@ -405,7 +405,7 @@ export default function Portfolio() {
               </h2>
               <div className="w-24 h-1 bg-gradient-to-r from-slate-600 to-gray-600 mx-auto rounded-full" />
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Prêt à collaborer sur votre prochain projet ? N'hésitez pas à me contacter !
+                 Prêt à collaborer sur votre prochain projet ? Contactez-moi avec plaisir.
               </p>
             </div>
 
